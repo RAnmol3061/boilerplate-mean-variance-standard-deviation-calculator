@@ -47,10 +47,8 @@ def calculate(list):
         sum_flatten = a.sum()
         su = [sum_axis0.tolist(), sum_axis1.tolist(), sum_flatten.tolist()]
         calculations['sum'] = su
-
-    
-
-
+    else:
+        raise ValueError("List must contain nine numbers.")
 
 
     return calculations
